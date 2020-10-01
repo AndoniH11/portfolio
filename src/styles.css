@@ -512,6 +512,24 @@ header{
     }
 }
 
+@media (max-width: 850px){
+    .contacto{
+        flex-direction: column;
+    }
+
+    .metodo-contacto{
+        margin: 0 auto;
+    }
+
+    .telefono{
+        margin-bottom: 40px;
+    }
+
+    .contacto-button{
+        margin-top: 60px;
+    }
+}
+
 @media (max-width: 750px){
     .apartados{
         float: none;
@@ -543,21 +561,6 @@ header{
         width: 50vw;
     }
 
-    .contacto{
-        flex-direction: column;
-    }
-
-    .metodo-contacto{
-        margin: 0 auto;
-    }
-
-    .telefono{
-        margin-bottom: 40px;
-    }
-
-    .contacto-button{
-        margin-top: 60px;
-    }
 
     .proyecto{
         width: 80vw;
