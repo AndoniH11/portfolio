@@ -1,0 +1,574 @@
+
+@font-face{
+    font-family: 'PT Sans';
+    src: url('./assets/fonts/PTSans-Regular.ttf')
+}
+
+@font-face{
+    font-family: 'Oswald';
+    src: url('./assets/fonts/Oswald-VariableFont_wght.ttf');
+}
+
+@font-face{
+    font-family: 'Montserrat';
+    src: url('./assets/fonts/Montserrat-Regular.ttf');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'PT Sans';
+    outline: none;
+    scroll-behavior: smooth; 
+}
+
+.clearfix{
+    display: block;
+    clear: both;
+    float: none;
+}
+
+header{
+    height: 70px;
+    line-height: 70px;
+    background-color: rgb(27, 27, 27);
+}
+
+.nombre{
+    float: left;
+    color: #aaa;
+    font-size: 26px;
+    margin-left: 7vw;
+    animation: topTobottom 0.8s;
+}
+
+.burger-icon{
+    color: #aaa;
+    font-size: 35px;
+    transition: all 500ms;
+    float: right;
+    margin-right: 7vw;
+    margin-top: 16px;
+    cursor: pointer;
+    display: none;
+}
+
+.burger-icon:hover{
+    color: white;
+}
+
+.apartados{
+    display: flex;
+    float: right;
+    margin-right: 5.5vw;
+}
+
+.apartados .link a{
+    color: #aaa;
+    margin-right: 30px;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: all 800ms;
+}
+
+.link1{
+    animation: topTobottom 0.8s;
+}
+
+.link2{
+    animation: topTobottom 1.2s;
+}
+
+.link3{
+    animation: topTobottom 1.6s;
+}
+
+.apartados .link:hover{
+    color: #fff;
+}
+
+@keyframes topTobottom{
+    from{
+        transform: translateY(-80px);
+        opacity: 0;
+    }to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* HOME */
+
+.home-container{
+    min-height: calc(100vh - 70px);
+    background-color: rgb(38, 40, 43);
+    padding: 0 7vw;
+    padding-top: 24vh;
+    margin: auto;
+}
+
+.home-container h1,
+.home-container h2,
+.home-container h3{
+    color: white;
+    font-weight: normal;
+    font-size: 5vh;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.home-container h1{
+    animation: leftToright ease-in-out 1.5s;
+}
+
+.home-container h2{
+    animation: leftToright ease-in-out 2.0s;
+}
+
+.home-container h3{
+    animation: leftToright ease-in-out 2.2s;
+}
+
+
+.home-container span{
+    color: rgb(28, 165, 219);
+}
+
+.home-container p{
+    font-size: 20px;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    color: #777;
+    animation: leftToright ease-in-out 2.4s;
+}
+
+.home-container button{
+    width: 200px;
+    height: 45px;
+    background-color: transparent;
+    text-transform: uppercase;
+    color: rgb(28, 165, 219);
+    border: 3px solid rgb(28, 165, 219);
+    margin-top: 40px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 600ms;
+    animation: leftToright ease-in-out 2.6s;
+}
+
+.home-container button:hover{
+    box-shadow: 16em 0 0 0 rgb(28, 165, 219) inset;
+    color: white
+}
+
+@keyframes leftToright{
+    from{
+        transform: translateX(-800px);
+        opacity: 0;
+    }to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.andoni{
+    width: 300px;
+    float: right;
+    margin-top: -200px;
+    margin-right: 100px;
+    transition: all 800ms;
+}
+
+/* SOBRE MI */
+
+.sobremi-container{
+    min-height: 100vh;
+    padding: 0 15vw;
+    padding-top: 90px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.titulo{
+    font-size: 40px;
+    margin-bottom: 60px;
+    color: #333;
+    letter-spacing: 2px;
+}
+
+.caracteristicas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.caracteristicas div{
+    width: 200px;
+    margin: auto;
+}
+
+.caracteristica-icons{
+    width: 150px;
+}
+
+.caracteristicas h3{
+    font-size: 25px;
+    color: #444;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.caracteristicas p{
+    color: #666;
+}
+
+.sobre-mi-descripcion-container{
+    margin-top: 80px;
+    display: flex;
+}
+
+.sobre-mi-descripcion{
+    margin-top: 40px;
+    width: 80%;
+    float: right;
+    text-align: left;
+    color: #333;
+    padding-left: 16%;
+    margin-bottom: 100px;
+}
+
+.sobre-mi-descripcion p{
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.sobre-mi-foto img{
+    width: 320px;
+}
+
+
+/* PROYECTOS */
+
+.proyectos-container{
+    text-align: center;
+    background-color: rgba(243, 242, 240, 0.623);
+    padding-top: 80px;
+    padding-bottom: 130px;
+}
+
+.proyectos{
+    display: grid;
+    grid-template-columns: repeat(2, 460px);
+    justify-content: center;
+    grid-gap: 50px;
+    grid-row-gap: 80px;
+    transform-style: preserve-3d;
+}
+
+.proyecto{
+    position: relative;
+    height: 270px;
+    border-radius: 15px;
+}
+
+.proyecto:hover{
+    box-shadow: 0px 50px 40px rgba(0,0,0, 0.1);
+}
+
+.proyecto:hover .parte-posterior{
+    transform: translateZ(50px) scaleY(1);
+}
+
+.img-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.proyecto-img{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.parte-posterior{
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    right: 15%;
+    background-color: rgba(32, 31, 31, 0.911);
+    transform: translateZ(20px) scaleY(0); 
+    padding: 40px 25px;
+    transform-origin: top;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    border-radius: 5px;
+}
+
+.parte-posterior h3{
+    font-size: 24px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.proyecto-links{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.link-pagina{
+    color: white;
+    margin-top: 40px;
+}
+
+.link-pagina a{
+    color: white;
+}
+
+.icon-proyecto{
+    font-size: 24px;
+    transition: all 500ms;
+}
+
+.icon-proyecto:hover{
+    font-size: 30px;
+}
+
+.link-pagina p:hover{
+    font-size: 18px;
+    transition: all 500ms;
+}
+
+.tilt{
+    padding: 0px !important;
+    width: 100% !important;
+    border-radius: 15px !important;
+}
+
+
+/* CONTACTO */
+
+.contacto-container{
+    background-color: white;
+    padding: 80px 15vw;
+    text-align: center;
+    color: #555;
+}
+
+.contacto{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.contacto-descripcion{
+    text-transform: uppercase;
+    line-height: 26px;
+    font-family: 'Montserrat';
+}
+
+.metodo-contacto{
+    margin: 0 50px;
+    font-weight: bold;
+}
+
+.metodo-contacto p{
+    color: #777;
+    font-family: 'Montserrat';
+}
+
+.contacto-icon{
+    font-size: 50px;
+    margin-bottom: 15px;
+    color: rgb(28, 165, 219);
+}
+
+.telefono{
+    padding: 0px 50px;
+}
+
+.contacto-button{
+    width: 200px;
+    height: 45px;
+    background-color: rgb(28, 165, 219);
+    text-transform: uppercase;
+    color: white;
+    border: 3px solid rgb(28, 165, 219);
+    margin-top: 80px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+.contacto-button:hover{
+    background-color: white;
+}
+
+.contacto-button:hover a{
+    color: rgb(28, 165, 219);
+}
+
+.contacto-button a{
+    color: white
+}
+
+@media (max-width: 1800px){
+    .sobre-mi-foto img{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 1500px){
+    .sobre-mi-foto img{
+        width: 400px;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 1100px){
+    .sobremi-container{
+        padding-left: 10vw;  
+        padding-right: 10vw;  
+    }
+
+    .sobre-mi-foto{
+        display: flex;
+        align-self: center;
+    }
+
+    .sobre-mi-foto img{
+        margin-top: -10vw;
+    }
+
+    .proyectos{
+        grid-template-columns: repeat(2, 400px);
+        grid-gap: 35px;
+    }
+
+    .proyecto{
+        height: 250px;
+    }
+
+    .tilt{
+        height: 250px !important;
+    }
+}
+
+@media  (max-width: 960px){
+    
+    .sobre-mi-descripcion{
+        width: 80%;
+    }
+
+    .caracteristica-icons{
+        width: 130px;
+    }
+
+    .sobre-mi-descripcion-container{
+        margin-top: 20vw;
+        flex-direction: column;
+    }
+
+    .sobre-mi-descripcion{
+        padding-left: 0;
+        margin: 50px auto;
+    }
+
+    .contacto-container{
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+
+    .proyectos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .proyecto{
+        width: 480px;
+        height: 280px;
+        margin: auto;
+    }
+
+    .tilt{
+        width: 480px !important;
+        height: 280px !important;
+    }
+}
+
+@media (max-width: 750px){
+    .apartados{
+        float: none;
+        width: 100vw;
+        justify-content: space-evenly;
+        margin-right: 0px;
+    }
+
+    .apartados .link{
+        margin-right: 0px;
+        margin: 0px 15px;
+
+    }
+
+    .navBar-oculta{
+        display: none;
+    }
+
+    .burger-icon{
+        display: block;
+    }
+
+    .caracteristicas{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sobre-mi-foto img{
+        width: 50vw;
+    }
+
+    .contacto{
+        flex-direction: column;
+    }
+
+    .metodo-contacto{
+        margin: 0 auto;
+    }
+
+    .telefono{
+        margin-bottom: 40px;
+    }
+
+    .contacto-button{
+        margin-top: 60px;
+    }
+
+    .proyecto{
+        width: 80vw;
+        height: 50vw;
+    }
+
+    .tilt{
+        width: 80vw !important;
+        height: 50vw !important;
+    }
+}
+
+
+
