@@ -1,5 +1,5 @@
 import React from 'react';
-import andoni from '../assets/img/andoni-cortado.png'
+import andoni from '../assets/img/andoni-cortado.jpg'
 
 const Descripcion = () => {
     return (
