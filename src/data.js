@@ -3,6 +3,7 @@ import covid from './assets/img/covid.png'
 import trattoria from './assets/img/trattoria.png'
 import todo from './assets/img/todo.png'
 import weather from './assets/img/weather.png'
+import barber from './assets/img/barber.png'
 
 export const proyectos = [
     {
@@ -42,9 +43,9 @@ export const proyectos = [
     },
     {
         id: 6,
-        name: 'Triumph Store',
-        img: triumph,
-        url: 'https://triumph-store.netlify.app/',
-        codeUrl: 'https://github.com/AndoniH11/triumph-store'
+        name: 'Barber Barcelona',
+        img: barber,
+        url: 'https://barberbarcelona.netlify.app/',
+        codeUrl: 'https://github.com/AndoniH11/barber'
     },
 ]
