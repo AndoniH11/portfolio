@@ -1,5 +1,4 @@
 import React from 'react';
-import andoni from '../assets/img/andoni-cortado.png'
 
 class Home extends React.Component {
 
@@ -32,8 +31,6 @@ class Home extends React.Component {
                         Contactar
                     </button>
                 </a>
-
-                <img src={andoni} className='andoni' style={this.state.show ? {opacity: 1} : {opacity:0}}/>
             </div>
        
         )
