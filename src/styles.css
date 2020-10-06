@@ -31,6 +31,8 @@
     float: none;
 }
 
+/* NAVBAR */
+
 header{
     height: 70px;
     line-height: 70px;
@@ -86,7 +88,7 @@ header{
     animation: topTobottom 1.6s;
 }
 
-.apartados .link:hover{
+.apartados .link:hover a{
     color: #fff;
 }
 
@@ -145,7 +147,7 @@ header{
     animation: leftToright ease-in-out 2.4s;
 }
 
-.home-container button{
+.blue-button{
     width: 200px;
     height: 45px;
     background-color: transparent;
@@ -160,7 +162,7 @@ header{
     animation: leftToright ease-in-out 2.6s;
 }
 
-.home-container button:hover{
+.blue-button:hover{
     box-shadow: 16em 0 0 0 rgb(28, 165, 219) inset;
     color: white
 }
@@ -240,7 +242,7 @@ header{
     text-align: left;
     color: #333;
     padding-left: 16%;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .sobre-mi-descripcion p{
@@ -251,6 +253,10 @@ header{
 
 .sobre-mi-foto img{
     width: 320px;
+}
+
+.sobremi-container button{
+    margin-bottom: 100px;
 }
 
 
@@ -426,6 +432,174 @@ header{
     color: white
 }
 
+/* CURRICULUM */
+
+.curriculum-container{
+    display: flex;
+    height: 100vh;
+}
+
+.andoni-imagen-container{
+    width: 50vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.pantalla-azul{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(64, 64, 65, 0.555);
+}
+
+.andoni-foto{
+    width: 80%;
+}
+
+.curriculum{
+    width: 50vw;
+    flex-grow: 3;
+    overflow: auto;
+}
+
+.inicio-link{
+    float: right;
+    margin-right: 80px;
+    margin-top: 15px;
+    color: rgb(28, 165, 219);
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 500ms;
+    animation: rightToLeft 0.5s ease-in-out;
+}
+
+.inicio-link:hover{
+    font-size: 20px;
+    margin-right: 75px;
+}
+
+.curriculum h2{
+    font-size: 45px;
+    color: rgb(28, 165, 219);
+    text-align: center;
+    margin-top: 50px;
+    animation: rightToLeft 1s ease-in-out;
+}
+
+.subtitulo{
+    text-transform: uppercase;
+    color: #444;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 3px;
+    animation: rightToLeft 1.2s ease-in-out;
+}
+
+.andoni-descripcion{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+    animation: rightToLeft 1.4s ease-in-out;
+}
+
+.educacion-container{
+    animation: rightToLeft 1.8s ease-in-out;
+}
+
+.curriculum h3{
+    color: rgb(28, 165, 219);
+}
+
+.curriculum h4{
+    color: #444;
+}
+
+.mini-apartado{
+    margin-top: 25px;
+    margin-left: 5px;;
+}
+
+.mini-apartado p{
+    color: #555;
+}
+
+.apartado{
+    width: 70%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.apartado ul li{
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+.react-icon{
+    width: 15px;
+}
+
+.apartado ul li:before{
+    content: "\2022";
+    color: rgb(28, 165, 219);
+    width: 1.2em;
+    display: inline-block;
+    margin-left: -1em;
+}
+
+.habilidades-idiomas-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 70%;
+    margin: auto;
+    grid-column-gap: 7.5%;
+}
+
+.language-icon{
+    width: 15px;
+    margin-left: 10px;
+    margin-bottom: -2px;
+}
+
+.html{
+    width: 18px;
+}
+
+.contacto-curriculum{
+    background-color: rgb(28, 165, 219);
+    padding-bottom: 50px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.contacto-curriculum .contacto-icon{
+    color: white;
+}
+
+.contacto-curriculum p{
+    color: white;
+}
+
+@keyframes rightToLeft{
+    from{
+        opacity: 0;
+        transform: translateX(50vw);
+    }to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+/* MEDIA QUERY */
+
 @media (max-width: 1800px){
     .sobre-mi-foto img{
         margin-top: 20px;
@@ -465,6 +639,10 @@ header{
 
     .tilt{
         height: 250px !important;
+    }
+
+    .andoni-imagen-container{
+        display: none;
     }
 }
 
@@ -571,6 +749,20 @@ header{
         width: 80vw !important;
         height: 50vw !important;
     }
+}
+
+@media (max-width: 650px){
+    .habilidades-idiomas-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .curriculum h2{
+        font-size: 35px;
+    }
+    
+
 }
 
 

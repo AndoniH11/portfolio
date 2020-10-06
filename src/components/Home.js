@@ -27,7 +27,7 @@ class Home extends React.Component {
                 <p>React  /  CSS  /  JavaScript</p>
                 
                 <a href='#contacto-container'>
-                    <button>
+                    <button className='blue-button'>
                         Contactar
                     </button>
                 </a>

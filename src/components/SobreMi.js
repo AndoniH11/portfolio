@@ -2,7 +2,8 @@ import React from 'react';
 import mobile from '../assets/img/mobile-pentagon.png';
 import rocket from '../assets/img/rocket-pentagon1.png';
 import bombilla from '../assets/img/bombilla-pentagon.png';
-import Descripcion from './Descripcion'
+import Descripcion from './Descripcion';
+import {Link} from 'react-router-dom';
 
 class SobreMi extends React.Component {
     render() {
@@ -36,6 +37,12 @@ class SobreMi extends React.Component {
                 </div>
 
                 <Descripcion/>
+
+                <Link to='/curriculum'>
+                    <button className='blue-button'>
+                        Ver mi Currículum
+                    </button>
+                </Link>
             </div>
         )
     }

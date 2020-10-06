@@ -1,20 +1,17 @@
 import React from 'react';
-import NavBar from './components/NavBar';
-import Home from './components/Home';
-import SobreMi from './components/SobreMi';
-import Proyectos from './components/Proyectos';
-import Contacto from './components/Contacto';
+import HomePage from './components/HomePage';
+import Curriculum from './components/Curriculum';
+import {Route, Switch} from 'react-router-dom';
 
 
 class App extends React.Component{
     render(){
         return(
         <React.Fragment>
-            <NavBar/>
-            <Home/>
-            <SobreMi/>
-            <Proyectos/>
-            <Contacto />
+            <Switch>
+                <Route exact path='/' component={HomePage}/>
+                <Route exact path='/curriculum' component={Curriculum}/>
+            </Switch>
         </React.Fragment>)
     }
 }
