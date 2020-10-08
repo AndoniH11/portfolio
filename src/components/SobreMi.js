@@ -4,11 +4,21 @@ import rocket from '../assets/img/rocket-pentagon1.png';
 import bombilla from '../assets/img/bombilla-pentagon.png';
 import Descripcion from './Descripcion';
 import {Link} from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 class SobreMi extends React.Component {
+
+    componentDidMount(){
+        AOS.init({
+            duration: 2000
+        })
+
+    }
+
     render() {
         return (
-            <div className='sobremi-container' id='sobremi-container'>
+            <div className='sobremi-container' id='sobremi-container' data-aos='fade-left'>
                 <h2 className='titulo'>SOBRE MI</h2>
                 <div className='caracteristicas'>
                     <div>

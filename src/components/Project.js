@@ -2,8 +2,18 @@ import React from 'react';
 import Tilt from 'react-vanilla-tilt'
 import { AiOutlineGithub } from 'react-icons/ai';
 import { HiOutlineDesktopComputer } from 'react-icons/hi';
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 class Project extends React.Component {
+
+    componentDidMount = () => {
+        AOS.init({
+            offset: 300,
+            duration: 2000,
+            delay: 5
+        })
+    }
 
     handleClick = (e) => {
         console.log(e.target.options)
@@ -12,7 +22,7 @@ class Project extends React.Component {
 
     render() {
         return (
-            <Tilt className='tilt' onClick={(e) => this.handleClick(e)}>
+            <Tilt className='tilt' onClick={(e) => this.handleClick(e)} data-aos='flip-down'>
                 <div className='proyecto'>
                     <div className='img-container'>
                         <img

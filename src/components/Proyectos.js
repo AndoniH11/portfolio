@@ -1,5 +1,4 @@
 import React from 'react';
-import Proyecto from './Proyecto'
 import {proyectos} from '../data';
 import Project from './Project';
 
