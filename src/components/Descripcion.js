@@ -5,7 +5,7 @@ const Descripcion = () => {
     return (
         <div className='sobre-mi-descripcion-container'>
             <div className='sobre-mi-foto'>
-                <img src={andoni} alt='foto de Andoni'/>
+                {<img src={andoni} alt='foto de Andoni'/>}
             </div>
 
             <div className='sobre-mi-descripcion'>
