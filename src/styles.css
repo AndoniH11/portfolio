@@ -736,8 +736,8 @@ header{
     }
 
     .sobre-mi-foto img{
-        width: 50vw;
-        height: 60vw;
+        width: 50vw !important;
+        height: 60vw !important;
     }
 
 
