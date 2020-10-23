@@ -719,7 +719,12 @@ header{
     .apartados .link{
         margin-right: 0px;
         margin: 0px 15px;
+    }
 
+    .apartados .link a{
+        margin-right: 0px;
+        margin: 0px 15px;
+        font-size: 14px;
     }
 
     .navBar-oculta{
