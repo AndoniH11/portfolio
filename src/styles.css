@@ -740,6 +740,10 @@ header{
         height: 60vw !important;
     }
 
+    .sobre-mi-foto{
+        height: 100%;
+        width: 100%;
+    }
 
     .proyecto{
         width: 80vw;
