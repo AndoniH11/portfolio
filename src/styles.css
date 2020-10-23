@@ -735,7 +735,7 @@ header{
         flex-direction: column;
     }
 
-    /* .sobre-mi-foto img{
+    .sobre-mi-foto img{
         width: 50vw !important;
         height: 60vw !important;
     }
@@ -743,7 +743,7 @@ header{
     .sobre-mi-foto{
         height: 100%;
         width: 100%;
-    } */
+    } 
 
 
     .proyecto{
