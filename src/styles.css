@@ -424,7 +424,7 @@ header{
     background-color: white;
 }
 
-.contacto-button:hover a{
+.contacto-button:hover{
     color: rgb(28, 165, 219);
 }
 

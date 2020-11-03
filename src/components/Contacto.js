@@ -28,7 +28,7 @@ class Contacto extends React.Component {
                     </div>
                 </div>
     
-                <button className='contacto-button'><a href='#header'>Volver al inicio</a></button>
+                <a href='#header'> <button className='contacto-button'>Volver al inicio</button></a>
             </div>
         )
     }
